@@ -5,12 +5,14 @@ import java.awt.Dimension;
 import java.awt.Graphics;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.Timer;
 
-public class PolymorphWindow extends JPanel implements ActionListener{
+public class PolymorphWindow extends JPanel implements ActionListener {
     public static final int WIDTH = 900;
     public static final int HEIGHT = 600;
     
@@ -35,7 +37,7 @@ public class PolymorphWindow extends JPanel implements ActionListener{
    	 
    	 bluePoly = new BluePolymorph(50, 50);
    	 redPoly = new RedMorph(200, 50);
-   	 movePoly = new MovingMorph(0, 100);
+   	 movePoly = new MovingMorph(200, 200);
    	 
    	 timer = new Timer(1000 / 30, this);
    	 timer.start();
@@ -59,4 +61,5 @@ public class PolymorphWindow extends JPanel implements ActionListener{
    	 redPoly.update();
    	 movePoly.update();
     }
+	
 }

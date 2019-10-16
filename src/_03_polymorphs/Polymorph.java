@@ -1,21 +1,14 @@
 package _03_polymorphs;
 
 import java.awt.Graphics;
+import java.awt.Point;
 
 public abstract class Polymorph {
-	protected int movx;
     protected int x;
     protected int y;   
     protected int width = 50;
     protected int height = 50;
-
-	public int getMovx() {
-		return movx;
-	}
-
-	public void setMovx(int movx) {
-		this.movx = movx;
-	}
+    int theta = 0;
 
 	public int getX() {
 		return x;
@@ -41,7 +34,7 @@ public abstract class Polymorph {
     }
     
     public void update(){
-    	movx++;
+    	
     }
     
     public abstract void draw(Graphics g);
