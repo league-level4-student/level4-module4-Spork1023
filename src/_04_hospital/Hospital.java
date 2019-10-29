@@ -26,6 +26,7 @@ public class Hospital {
 				}
 				else {
 					docnum++;
+					i--;
 				}
 			}
 		}
